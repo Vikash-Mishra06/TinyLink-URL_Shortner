@@ -173,12 +173,12 @@ export default function Dashboard() {
 
             <tbody>
               {links.map((link) => {
-                const shortUrl = link.shortUrl || `${BACKEND_BASE_URL}/${link.code}`;
+                const shortUrl = link.shortUrl;
                 const clickPercentage = Math.min(100, Math.max(5, (link.clicks / maxClicks) * 100));
 
                 return (
                   <tr key={link.code} className="bg-white border-b border-gray-300 hover:bg-gray-50 transition-colors group">
-                    
+
                     {/* Code */}
                     <td className="px-6 py-4 whitespace-nowrap">
                       <Link to={`/link/${link.code}`} className="font-medium text-blue-600 hover:underline hover:text-blue-800">

@@ -32,7 +32,7 @@ export default function CreateLink() {
 
   return (
     <div style={{ maxWidth: 720 }}>
-      
+
       {/* --- Updated Icon + Heading (Same as Total Links UI) --- */}
       <div className="flex items-center gap-3 mb-4">
         <div className="p-3 rounded-lg bg-blue-100 ">
@@ -98,7 +98,7 @@ export default function CreateLink() {
               </a>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                
+
                 {/* Copy Button */}
                 <button
                   type="button"

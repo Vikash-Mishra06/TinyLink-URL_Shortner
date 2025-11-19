@@ -52,7 +52,7 @@ export default function LinkDetails() {
   if (loading) return <p className="text-gray-500 text-sm">Loading...</p>;
   if (error) return <p className="text-red-500 text-sm">{error}</p>;
 
-  const shortUrl = link.shortUrl || `${BACKEND_BASE_URL}/${link.code}`;
+  const shortUrl = link.shortUrl;
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
