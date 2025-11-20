@@ -19,7 +19,7 @@ app.use(express.json());
 
 // Health check
 app.get("/healthz", (req, res) => {
-  res.status(200).json({ status: "ok" });
+  res.json({ status: "ok" });
 });
 
 // API routes
