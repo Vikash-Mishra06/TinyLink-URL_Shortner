@@ -173,7 +173,7 @@ export default function Dashboard() {
 
             <tbody>
               {links.map((link) => {
-                const shortUrl = link.shortUrl;
+                const shortUrl = link.shortUrl || `${BACKEND_BASE_URL}/${link.code}`;
                 const clickPercentage = Math.min(100, Math.max(5, (link.clicks / maxClicks) * 100));
 
                 return (
